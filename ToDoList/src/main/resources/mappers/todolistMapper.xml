@@ -8,4 +8,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	select * from umki_database.todolist
 </select>
 
+<insert id="insertInfo">
+	insert into todolist (`content`) values (#{content})
+</insert>
+
 </mapper>
